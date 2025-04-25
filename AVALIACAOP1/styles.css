@@ -1,0 +1,328 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  header {
+    background: linear-gradient(90deg, #800000, #cc0000);
+    color: white;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  nav ul li:hover {
+    transform: scale(1.1);
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #800000;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #800000;
+    color: white;
+  }
+  
+  td {
+    background-color: #ffe6e6;
+  }
+  
+  footer {
+    background: linear-gradient(90deg, #800000, #cc0000);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+  }
+  form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  form button:hover {
+    background-color: #a00000;
+  }
+  form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+    transition: transform 0.3s;
+  }
+  
+  form:hover {
+    transform: scale(1.01);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  form input:focus {
+    border-color: #800000;
+    box-shadow: 0 0 5px rgba(128, 0, 0, 0.5);
+    outline: none;
+  }
+  
+  form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+  }
+  
+  form button:hover {
+    background-color: #a00000;
+    transform: scale(1.02);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    form {
+      margin: 20px 15px;
+      padding: 20px;
+    }
+  
+    form button {
+      font-size: 15px;
+    }
+  }
+  main {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  main ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  main ul li {
+    margin: 10px 0;
+  }
+  
+  main ul li a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #800000;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    width: 100%;
+    max-width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  
+  main ul li a:hover {
+    background-color: #a00000;
+    transform: scale(1.03);
+  }
+  .custom-button {
+    display: inline-block;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  .custom-button:hover {
+    transform: scale(1.03);
+  }
+  /*aqui*/
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 100px auto 40px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .container h1 {
+    color: #800000;
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  
+  .container p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .container a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #800000;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .container a:hover {
+    background-color: #a00000;
+    transform: scale(1.03);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .container {
+      margin: 60px 15px 20px;
+      padding: 20px;
+    }
+  
+    .container h1 {
+      font-size: 26px;
+    }
+  
+    .container p {
+      font-size: 16px;
+    }
+  }
+  
+  
+ 
